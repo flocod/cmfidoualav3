@@ -1,0 +1,288 @@
+.recommander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  width: 100%;
+  background: linear-gradient(#fafafa 0%, #f3e7dd 51.89%, #fafafa 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .struct {
+    display: block;
+    width: 90%;
+    position: relative;
+    .Titre {
+      display: block;
+      text-align: left;
+      width: 35%;
+      @media all and (max-width: 945px) {
+        width: 80%;
+      }
+      @media all and (max-width: 476px) {
+        width: 100%;
+      }
+      .text1 {
+        font-size: 30px;
+        display: block;
+        font-weight: 500;
+        @media all and (max-width: 476px) {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .text2 {
+        font-size: 12px;
+        display: block;
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    .context {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55%;
+      height: auto;
+      background: #ffffff25 0% 0% no-repeat padding-box;
+      box-shadow: 0px 4px 4px #00000011;
+      border-radius: 14px;
+      backdrop-filter: blur(5px);
+      position: relative;
+      z-index: 1;
+
+      @media all and (max-width: 1310px) {
+        width: 70%;
+      }
+      @media all and (max-width: 1161px) {
+        width: 100%;
+      }
+      @media all and (max-width: 761px) {
+        background: #ffffffc2;
+      }
+
+      .context_struct {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        @media all and (max-width: 761px) {
+          justify-content: center;
+        }
+        .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          position: relative;
+          img {
+            display: block;
+            width: 550px;
+          }
+        }
+
+        .text_context {
+          display: block;
+          text-align: left;
+          width: 50%;
+          @media all and (max-width: 761px) {
+            width: 100%;
+          }
+
+          .block_titre {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            .icone {
+              display: inline-block;
+              height: 75px;
+            }
+            .book_name {
+              display: inline-block;
+              margin-left: 10px;
+              .value {
+                display: block;
+                font-weight: 700;
+                font-size: 20px;
+                @media all and (max-width: 536px) {
+                  font-size: 15px;
+                }
+              }
+              .cat {
+                display: inline-block;
+                font-size: 12px;
+                margin-top: 8px;
+                color: #0052a0;
+              }
+            }
+          }
+
+          .details {
+            display: block;
+            width: 100%;
+            h5 {
+              font-size: 13px;
+            }
+            p {
+              display: block;
+              font-size: 12px;
+            }
+            .stars {
+              display: block;
+              margin-top: 10px;
+              width: 100px;
+            }
+          }
+          .detail1 {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+
+            .item_detail {
+              display: block;
+              width: 120px;
+              margin-top: 20px;
+              .text_small {
+                display: block;
+                font-size: 10px;
+                opacity: 0.8;
+              }
+              .texte {
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+              }
+            }
+          }
+
+          .flex {
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            .prix {
+              font-size: 20px;
+              font-family: "Poppins";
+              font-weight: bold;
+            }
+
+            .btn_buy {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              width: 112px;
+              height: 50px;
+              background: #0052a0 0% 0% no-repeat padding-box;
+              border-radius: 8px;
+
+              @media all and (max-width: 336px) {
+                width: 100%;
+                margin-top: 20px;
+              }
+
+              .ico {
+                display: inline-block;
+                font-size: 18px;
+              }
+
+              .text {
+                display: inline-block;
+                font-size: 16px;
+                margin-left: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .images_illus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 42%;
+      position: relative;
+      z-index: 1;
+      @media all and (max-width: 1310px) {
+        width: 28%;
+      }
+      @media all and (max-width: 1161px) {
+        display: none;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .circle1 {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    transform: translateX(-50%) translateY(30%);
+    width: 300px;
+    height: 300px;
+    background: #0052a0;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  .circle2 {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    transform: translateX(50%) translateY(0%);
+    width: 500px;
+    height: 500px;
+    background: #e6b565;
+    border-radius: 50%;
+    z-index: 0;
+    @media all and (max-width: 945px) {
+      width: 200px;
+      height: 200px;
+      transform: translateX(50%) translateY(100%);
+    }
+  }
+
+  .points_top {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 15px;
+    transform: translateX(-160%) translateY(-50%);
+  }
+  .points_bottom {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    transform: translateX(100%) translateY(-50%);
+    @media all and (max-width: 1161px) {
+      transform: translateX(50%) translateY(-50%);
+    }
+  }
+}

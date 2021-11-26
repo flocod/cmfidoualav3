@@ -1,0 +1,18 @@
+footer
+{
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+background: rgb(44, 44, 44);
+.text{
+    display: inline-block;
+    width: 80%;
+    color: white;
+    font-size: 12px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+}

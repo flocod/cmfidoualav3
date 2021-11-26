@@ -1,0 +1,201 @@
+.prayer_block
+{
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+    .after{
+        background: #2c1863 !important;
+        color: white !important;
+
+        .btn
+        {
+            transition: all ease 0.3s;
+            background: $cta !important;
+            color: white; 
+            border-radius: 30px;
+        }
+
+    }
+
+    .after::after{
+          
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: attr(after);
+        text-transform: uppercase;
+        background: $cta;
+        height:35px;
+        width: 200px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 13px;
+        transform:translateX(-28%) translateY(70%) rotate(316deg);
+
+}
+
+.prayer_topic
+{
+    .text{
+        margin-top: 70px !important;
+    }
+    height: 230px  !important;
+
+}
+
+    .prayer
+    {
+        display: inline-block;
+        width: 260px;
+        height: 270px;
+        background:white;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.096);
+        border-radius: 20px;
+        color: $text;
+        transition: all ease 0.3s;
+        position: relative;
+        overflow: hidden;
+
+        @media all and (max-width:881px){
+            width: 230px;
+        }
+
+        .time{
+            display: inline-block;
+            text-align: center;
+            margin-top: 40px;
+            .text_time{
+                display: inline-block;
+                font-size: 65px;
+                line-height: 65px;
+                font-family: mb;
+                @media all and (max-width:881px){
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+               
+
+            }
+
+            .unit{
+                display: inline-block;
+                font-size: 14px;
+                font-family: pr;
+                @media all and (max-width:881px){
+                    font-size: 12px;
+                }
+         
+            }
+        }
+
+
+
+        .ico{
+            display: inline-block;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 65px;
+            
+    
+        }
+
+        .prayer_ico
+        {
+            opacity: 0.04;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateY(5%) translateX(-50%);
+            font-size: 100px;
+        }
+
+        .text{
+            display: inline-block;
+            width: 80%;
+            text-align: left;
+            margin-top: 20px;
+          
+            
+            .text1{
+                overflow: hidden;
+                text-overflow: Ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                font-size: 14px;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                line-height: 20px; /*X fallback */
+                max-height: calc(20px * 4px); /* X*N fallback */
+           
+                margin-top: 0px;
+                font-family: mb;
+                text-transform:none;
+          
+            }
+
+            .text2{
+                display: inline-block;
+                margin-top: 4px;
+                font-family: pr;
+        
+                font-size: 10px;
+                opacity: 0.9;
+            }
+        }
+
+        .btn
+        {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 45px;
+            border-radius: 8px;
+            background-color: $theme;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            color: white;
+            .text_btn{
+                display: inline-block;
+                font-size: 13px;
+               
+            }
+
+            .btn_ico{
+                display: inline-block;
+                font-size: 13px;
+                
+                margin-left: 20px;
+            }
+        }
+
+
+       
+
+
+        &:hover{
+            transition: all ease-out 0.3s;
+            background: #2c1863;
+            color: white;
+
+            .btn
+            {
+                transition: all ease 0.3s;
+                background: $cta;
+                color: white; 
+                border-radius: 30px;
+            }
+
+        }
+
+
+    }
+
+    
+
+}

@@ -1,0 +1,146 @@
+
+// ************** vertical menu************
+.vertical_menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 100;
+    width: 50px;
+    top: 0px;
+    left: 0px;
+    color: white;
+
+    @media all and (max-width:1147px){
+      display: none;
+    }
+  
+    &:after {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: $cta;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transform: translateX(-100%);
+      transition: 0.8s;
+    }
+  
+    &:hover {
+      &:after {
+        transform: translateX(0%);
+        transition: 0.5s;
+      }
+    }
+  
+    &__block1 {
+      background: $theme;
+      height: 60%;
+      clip-path: polygon(100% 0, 100% 0, 100% 85%, 0 100%, 0 0);
+      position: relative;
+      padding-top: 20px;
+  
+      .btn_menu_ico {
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  
+    .icon_box_block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 120px;
+      flex-direction: column;
+  
+      .ico_item {
+        display: inline-block;
+        margin-bottom: 25px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .ico_item_1 {
+        font-size: 20px;
+      }
+      .ico_item_social {
+        font-size: 16px;
+      }
+    }
+  
+    .icon_box_block_2 {
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+  
+    &__block2 {
+      background: transparent;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .toggle_lang_box {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 27px;
+        height: auto;
+        position: relative;
+        cursor: pointer;
+  
+        &__text {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          color: white;
+        }
+  
+        &__bnt {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          background: white;
+          width: 100%;
+          height: 15px;
+          border-radius: 12px;
+          font-size: 0px;
+          line-height: 0px;
+  
+          &--switch {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background: $cta;
+            font-size: 0px;
+            line-height: 0px;
+            display: inline-block;
+            transform: translateX(5px);
+            transition: 0.3s;
+          }
+  
+          .active {
+            transform: translateX(-5px);
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  
+    &__block3 {
+      background: $theme;
+      height: 70px;
+      width: 100%;
+      position: relative;
+      clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
+  }
+
+
+  .vertical_menu_after::after{
+  transform: translateX(0%);
+  }
